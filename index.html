@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Websites</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #1a202c;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #4a5568;
+    }
+
+    /* Container for the 3 image link cards */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    /* Individual card */
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* The link wrapping the picture */
+    .image-link {
+      display: block;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .image-link img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .image-link img {
+      transform: scale(1.05);
+    }
+
+    .card-info {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .card-info h2 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      color: #2b6cb0;
+    }
+
+    .card-info p {
+      font-size: 0.95rem;
+      color: #718096;
+      line-height: 1.4;
+    }
+
+    .card-info a.button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      background-color: #3182ce;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .card-info a.button:hover {
+      background-color: #2b6cb0;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #718096;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Websites Connected with Pictures</h1>
+    <p class="subtitle">Click on any image below to visit the connected website!</p>
+  </header>
+
+  <main class="cards-container">
+
+    <!-- Card 1: Google / Search -->
+    <article class="card">
+      <!-- The <a> tag links the image to the website -->
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="image-link" title="Visit Google">
+        <img src="https://images.unsplash.com/photo-1572945753563-804956783604?w=500&auto=format&fit=crop&q=80" alt="Google Search Website">
+      </a>
+      <div class="card-info">
+        <h2>Google</h2>
+        <p>Click the image above to search anything on Google.</p>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="button">Visit Site &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Card 2: Wikipedia / Encyclopedia -->
+    <article class="card">
+      <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" class="image-link" title="Visit Wikipedia">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500&auto=format&fit=crop&q=80" alt="Wikipedia Library of Knowledge">
+      </a>
+      <div class="card-info">
+        <h2>Wikipedia</h2>
+        <p>Click the image above to explore the free encyclopedia.</p>
+        <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" class="button">Visit Site &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Card 3: YouTube / Videos -->
+    <article class="card">
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="image-link" title="Visit YouTube">
+        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500&auto=format&fit=crop&q=80" alt="YouTube Video Platform">
+      </a>
+      <div class="card-info">
+        <h2>YouTube</h2>
+        <p>Click the image above to watch videos and tutorials.</p>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="button">Visit Site &rarr;</a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>Created for HTML School Assignment &bull; Click any picture to test!</p>
+  </footer>
+
+</body>
+</html>
